@@ -1,0 +1,12 @@
+﻿Administrator,
+
+Nje llogari e re eshte krijuar me te dhenat me poshte.
+Ju lutem konfirmoni llogarine me poshte duke klikuar linkun:
+
+
+##ConfirmLink##
+
+New user:
+
+Username: <% UserName %>
+Password: <% Password %>

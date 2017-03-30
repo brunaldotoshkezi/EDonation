@@ -1,0 +1,216 @@
+﻿
+a {
+text-decoration: none;
+color:black;
+}
+a:hover {
+text-decoration: underline;
+}
+.Window {
+width: 1000px;
+height:auto;
+margin:0 auto;
+}
+.Window .Main {
+width: 1000px;
+margin: 0 auto;
+}
+.Window .Main .Left {
+width: 248px;
+float: left;
+}
+.Window .Main .Left .Container {
+margin: 0px 0px 10px 10px;
+float: left;
+}
+.Window .Main .Right {
+width: 748px;
+float: right;
+}
+.Window .Main .Right .Contents{
+margin: 5px 5px 5px 0px;
+width: 100%;
+float: left;
+}
+.KategoriList{
+border: #787879 1px solid;
+text-align: center;
+margin-top: 20px;
+}
+.KategoriListHead
+{
+border: #787879 1px solid;
+background-color: #e6e6e6;
+}
+a.Kategoriapazgjedhur {
+line-height: 25px;
+text-decoration: none;
+color: #000;
+}
+a.Kategoriapazgjedhur:hover {
+text-decoration: underline;
+}
+a.Kategoriazgjedhur {
+line-height: 25px;
+font-weight: bold;
+text-decoration: none;
+color: #000;
+}
+
+.NenkategoriList {
+border: #787879 1px solid;
+text-align: center;
+margin: 20px 0;
+
+}
+.NenkategoriListHead {
+border: #787879 1px solid;
+background-color: #e6e6e6;
+}
+a.nenkategoripazgjedhur {
+line-height: 25px;
+text-decoration: none;
+color: Black;
+}
+a.nenkategoripazgjedhur:hover {
+text-decoration: underline;
+}
+a.nenkategorizgjedhur {
+line-height: 25px;
+font-weight: bold;
+text-decoration: none;
+color: Black;
+}
+
+.CatalogTitle {
+color: #155199;
+font-size: 24px;
+font-weight: bold;
+}
+
+.CatalogDescription {
+color: Black;
+font-weight: bold;
+font-size: 14px;
+}
+
+.ProduktList {
+border: 2px solid #21A3DB;
+}
+
+.ProduktList img {
+float: left;
+margin-right: 5px;
+vertical-align: top;
+padding:2px;
+}
+.ProduktTitle {
+font-size: 15px;
+font-weight: bold;
+margin: 15px 4px 2px 0;
+}
+
+.SearchBox {
+border-collapse:collapse;
+width:200px;
+}
+.SearchBoxHead {
+border: #787879 1px solid;
+background-color: #e6e6e6;
+text-align: center;
+}
+.SearchBoxContent {
+padding: 5px 0 5px 10px;
+}
+
+/*.UserInfoHead {
+border: #155199 1px solid;
+background-color: #639fe7;
+color: #000;
+text-align: center;
+}*/
+.AdminTitle {
+font-size: 24px;
+font-weight: bold;
+}
+.Window .Main .Right .AdminHeader {
+margin: 5px 5px 5px 0px;
+width: 100%;
+}
+.AdminContents {
+margin: 5px 5px 5px 0px;
+width: 900px;
+float: left;
+}
+.AdminError {
+color: Red;
+}
+
+.Grid {
+border-color: #E7E7FF;
+margin-top: 20px;
+width: 100%;
+}
+.GridHeader {
+color: White;
+background-color: Navy;
+}
+.GridRow
+{
+color: Navy;
+background-color: #E7E7FF;
+}
+.GridSelectedRow
+{
+color: #F7F7F7;
+background-color: #738A9C;
+}
+.GridEditingRow
+{
+color: Navy;
+}
+.GridAlternateRow
+{
+color: Navy;
+background-color: #F7F7F7;
+}
+/* Menuja Kryesore */ 
+#top_menu { 
+ float:left; 
+ width:1000px;
+ max-height:40px;
+ margin:2px 0 15px 0;
+ text-align:center;
+ background: #21A3DB; 
+ background: -moz-linear-gradient(top, #35acde 0%, #21A3DB 100%);
+ background: -webkit-gradient(linear, top top, bottom top, color-stop(0%,#35acde<!--a1a4a7-->), color-stop(100%,#21A3DB)); 
+ background: -webkit-linear-gradient(top, #35acde 0%, #21A3DB 100%); 
+ background: -o-linear-gradient(top, #35acde 0%, #21A3DB 100%); 
+ background: -ms-linear-gradient(top, #35acde 0%, #21A3DB 100%);
+ -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#35acde', endColorstr='#21A3DB',GradientType=1 ); 
+ background: linear-gradient(left, #35acde 0%, #21A3DB 100%); } 
+ #top_menu ul 
+ { 
+ list-style:none;
+ margin:10px;
+ float:left;
+ text-align:center; 
+ } 
+ #top_menu ul li 
+ { 
+ display:inline; 
+ font-size:14px;
+ font-family:Arial;
+ text-transform:uppercase;
+ padding:15px;
+ } 
+ #top_menu ul li a { 
+ font-size:14px; text-transform:uppercase; 
+ text-decoration:none; color:#fff; 
+ padding:4px;
+ }
+#top_menu ul li a:hover{ 
+color:#000;
+background:#fff;
+padding:4px;
+ }

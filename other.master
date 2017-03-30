@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ecommerce.master.cs" Inherits="ecommerce" %>
+
+<%@ Register src="UserControls/KategoriList.ascx" tagname="KategoriList" tagprefix="uc6" %>
+
+<%@ Register src="UserControls/NenkategoriList.ascx" tagname="NenkategoriList" tagprefix="uc2" %>
+
+<%@ Register src="UserControls/SearchBox.ascx" tagname="SearchBox" tagprefix="uc3" %>
+
+<%@ Register src="UserControls/UserInfo.ascx" tagname="UserInfo" tagprefix="uc1" %>
+
+<%@ Register src="UserControls/CartSummary.ascx" tagname="CartSummary" tagprefix="uc5" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+    <title>ecommerce : projekt</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="Scripts/jquery.min.js"></script>
+<script type="text/javascript" src="Scripts/jquery-ui-1.8.2.custom.min.js"></script>
+    <script type="text/javascript" src="Scripts/pirobox_extended.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $().piroBox_ext({
+            piro_speed: 700,
+            bg_alpha: 0.5,
+            piro_scroll: true // pirobox always positioned at the center of the page
+        });
+    });
+</script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css_pirobox/style_1/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/other.css" type="text/css" media="all" />
+    </head>
+    <body>
+    <form id="form1" runat="server">
+    <div class="Window">
+    <div id="header">
+    <div class="logo">
+    <a href="./"><img alt='' src="Images/logo.png" /></a>
+    </div>
+    <div id="icons">
+    <uc1:UserInfo id="UserInfo1" runat="server" />
+    <br />
+    <a class="fb" href="https://www.facebook.com/"><img alt='' src="Images/fb.png" /></a>
+    <a class="twitter_icon" href="https://twitter.com/"><img src="Images/tw.png" alt=''/></a>
+    <a class="chart" href="ShoppingCart.aspx"><img alt='' src="Images/chart.png" /></a>
+    </div>
+    </div>
+    <div id="top_menu">
+    <ul>
+    <li><a href="./">HOME</a></li>
+    <li><a href="RrethNesh.aspx">RRETH NESH</a></li>
+    <li><a href="catalog.aspx">DHURIMET</a></li>
+    <li><a href="#">ORGANIZATAT BAMIRESE</a></li>
+    <li><a href="Kontakti.aspx">KONTAKTI</a></li>
+    <li><a href="SiFunksionon.aspx">SI FUNKSIONON</a></li>
+    </ul>
+    <uc3:SearchBox id="SearchBox1" runat="server" />
+    </div>
+    <div class="Main">
+    <div class="Left">
+    <div class="Container">
+        <uc6:KategoriList id="KategoriList1" runat="server" />
+        <br />
+        <uc2:NenkategoriList id="NenkategoriList1" runat="server" />
+        <!--<p>
+            <uc5:CartSummary id="CartSummary1" runat="server" />
+        </p>-->
+        <p>
+        <asp:HyperLink id="PayPalViewCart" runat="server" NavigateUrl='<%# Link.ToPayPalViewCart() %>'>Your Shopping Cart
+        </asp:HyperLink>
+        </p>
+    </div>
+
+    </div>
+    <div class="Right">
+        <!-- Content Slider -->
+      <!-- End Content Slider -->
+    <div class="Contents">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1"
+    runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    </div>
+      <!-- Footer -->
+      <div id="footer">
+      <ul class="footer_links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Rreth Nesh</a></li>
+      <li><a href="#">Produkte</a></li>
+      <li><a href="#">Kontakti</a></li>
+      <li><a href="#">Sponsorat</a></li>
+      <li><a href="#">Dhurimet</a></li>
+      <li><a href="#">Si funksionon</a></li>
+      </ul>
+      </div>
+  <!-- End Footer -->
+  </div>
+</form>
+</body>
+</html>
